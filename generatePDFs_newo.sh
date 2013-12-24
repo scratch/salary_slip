@@ -21,7 +21,45 @@ SALARY_YEAR=""
 # -- nk Binaries required
 BIN_SENDEMAIL=sendEmail
 
-entries=( entSlNum Source Client ReportingManager entName entDoj SBU CTCInput SplAllInput entLOP entNDP Basicrepeat HRArepeat Convrepeat Medrepeat SplAllowrepeat LTArepeat PFEmployer Bonus ProjectAllowance Gratuity ESIEmployer entGross entBasic entHRA entConveyance entMedical entSpecial entLTA entGAE entPF entPTax entESI entITax entTransport entInsurance entCrederity entExcPaid entTotalDed entNetPayRnd ShiftAllow OverTime NoOfDaysrepeat TotalExtra NetEarnings ProjectAllowance Bonusrepeat Gratuityrepeat entBankName AccountNo entDesignation entPFnum entAmtInWords entEmpID entEmailID) 
+##entries=( entSlNum Source Client ReportingManager entName entDoj SBU CTCInput SplAllInput entLOP entNDP Basicrepeat HRArepeat Convrepeat Medrepeat SplAllowrepeat LTArepeat PFEmployer Bonus ProjectAllowance Gratuity ESIEmployer entGross entBasic entHRA entConveyance entMedical entSpecial entLTA entGAE entPF entPTax entESI entITax entTransport entInsurance entCrederity entExcPaid entTotalDed entNetPayRnd ShiftAllow OverTime NoOfDaysrepeat TotalExtra NetEarnings ProjectAllowance Bonusrepeat Gratuityrepeat entBankName AccountNo entDesignation entPFnum entAmtInWords entEmpID entEmailID) 
+
+entries=(
+entSlNum
+Source
+Client
+ReportingManager
+entName
+entDoj
+SBU
+CTCInput
+entLOP
+entNDP
+Basicrepeat
+HRArepeat
+Convrepeat
+Medrepeat
+SplAllowrepeat
+entGross
+entBasic
+entHRA
+entConveyance
+entMedical
+entSpecial
+entGrossEarned
+entPF
+entPTax
+entITax
+entExcPaid
+entTotalDed
+entNetPayRnd
+entBankName
+AccountNo
+entDesignation
+entPFnum
+entAmtInWords
+entEmpID
+entEmailID)
+
 # -- nk  CHECK these 
 #entNSA_CHECK
 #entNDP_CHECK
@@ -107,8 +145,6 @@ do
 	### Attach any other filename prefix if specified
 	pdfname=${email}_${SALARY_MONTH}${SALARY_YEAR}_${slNo}.pdf
 	cat $SGML_2 >> $SGML
-	cat $SGML > /tmp/xx
-	exit
 # exit # REMOVE THIS -- ksb
 	### Create the PDF file
 	echo -n "Generating $pdfname... "
@@ -137,7 +173,7 @@ do
 	# zip -u "$ZIP_FILE" "$file"
 	zip -u "$ZIP_FILE" "$file" &> /dev/null
 	echo "Done"
-	# -- nk REMOVE THIS rm -f $file
+	rm -f $file
 done
 echo "All PDF files saved to \"$ZIP_FILE\""
 echo "Done"

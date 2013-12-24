@@ -13,9 +13,6 @@
 
 <para>
 
-<!--
-<inlinegraphic fileref="./vault.png" scale="30"></inlinegraphic><emphasis role="strong">  Payslip for the month of &entMonth; &entYear;</emphasis>
--->
     <informaltable frame='none'>
 		<tgroup cols='1' align='left' colsep='0' rowsep='0'>
 		<colspec colname='h1' colnum='1' colwidth='400pt'>
@@ -24,7 +21,7 @@
 		<tbody>
 		<row>
 			<entry>
-			<inlinegraphic fileref="./vault.png" scale="25"></inlinegraphic>
+			<inlinegraphic fileref="./Axio_Sign_Logo.png" scale="25"></inlinegraphic>
 			<emphasis role="strong">  Payslip for the month of &entMonth; &entYear;</emphasis>
 			</entry>
 		</row>
@@ -111,13 +108,6 @@
       </row>
 
       <row rowsep='0'>
-	<entry>Conveyance</entry>
-	<entry> &entConveyance;</entry>
-	<entry>ESI</entry>  
-	<entry> &entESI;</entry>  
-      </row>
-
-      <row rowsep='0'>
 	<entry>Medical</entry>
 	<entry> &entMedical;</entry>
 	<entry>TDS</entry>  
@@ -127,24 +117,6 @@
       <row rowsep='0'>
 	<entry>Special Allowance</entry>
 	<entry> &entSpecial;</entry>
-	<entry>Transport</entry>  
-	<entry> &entTransport;</entry>  
-      </row>
-
-<!-- nk Newly added values -->
-      <row rowsep='0'>
-	<entry>LTA</entry>
-	<entry> &entLTA;</entry>
-	<entry>Insurance</entry>  
-	<entry> &entInsurance;</entry>  
-      </row>
-
-
-      <row rowsep='0'>
-	<entry></entry>
-	<entry></entry>
-	<entry>Crederity</entry>  
-	<entry> &entCrederity;</entry>  
       </row>
 
       <row rowsep='1'>
@@ -157,8 +129,8 @@
 <!-- nk Newly added values -->
       <row rowsep='1'>
 	<entry><emphasis role="strong">Total</emphasis></entry>
-	<entry><emphasis role="strong"> &entGAE;</emphasis></entry>
-	<entry><emphasis role="strong">Total</emphasis></entry>  
+	<entry><emphasis role="strong">&entGrossEarned;</emphasis></entry>  
+	<entry></entry>  
 	<entry><emphasis role="strong"> &entTotalDed;</emphasis></entry>  
       </row>
 
@@ -173,8 +145,7 @@
     <emphasis>* Excess salary paid in the previous month.</emphasis>
 	</para>
 
-    <para>Amount in words: <emphasis role="bold">Rupees &entAmtInWords; Only.
-    </emphasis></para>
+    <para>Amount in words: <emphasis role="bold">Rupees &entAmtInWords; Only.  </emphasis></para>
      <para> <emphasis>This is an electronically generated payslip and hence does not require signature.</emphasis></para>
  
  </section>

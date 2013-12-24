@@ -1,0 +1,35 @@
+Index
+Source
+Client
+Reporting Manager
+Employee Name
+DOJ
+SBU
+CTC Input
+LOP
+No. of Days
+Basic
+HRA
+Conv
+Med
+Spl Allow
+Gross Amount
+Basic
+HRA
+Conv
+Med
+Spl Allow
+Gross Amount Earned
+PF 
+P/TAX
+I Tax 
+Execess paid
+Total Deductions
+NET Payable rounded off
+Bank Name
+Account No.
+Designation
+PF No.
+Amount in words
+Employee ID
+E-mail ids
