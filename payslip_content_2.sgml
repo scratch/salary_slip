@@ -22,6 +22,12 @@
 		<row>
 			<entry>
 			<inlinegraphic fileref="./Axio_Sign_Logo.png" scale="25"></inlinegraphic>
+			<emphasis role="strong">Aseuro Technologies Pvt ltd (An Axio-Net group Co.s)</emphasis>
+			</entry>
+		</row>
+		<row> <entry> </entry> </row>
+		<row>
+			<entry align='center'>
 			<emphasis role="strong">  Payslip for the month of &entMonth; &entYear;</emphasis>
 			</entry>
 		</row>
